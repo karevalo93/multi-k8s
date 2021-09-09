@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: karevalo93/multi-server-k8s
+          image: karevalo93/multi-server
           ports:
             - containerPort: 5000
           env:

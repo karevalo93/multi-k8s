@@ -1,13 +1,13 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: akstore-online-tls
+  name: akstore-site-tls
 spec:
-  secretName: akstore-online
+  secretName: akstore-site
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: akstore.online
+  commonName: akstore.site
   dnsNames:
-    - akstore.online
-    - www.akstore.online
+    - akstore.site
+    - www.akstore.site
